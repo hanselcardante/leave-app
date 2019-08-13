@@ -1,0 +1,61 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-react",
+        "tslint-eslint-rules",
+        "tslint-config-airbnb",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "interface-name": [true, "never-prefix"],
+        "quotemark": [true, "single", "jsx-double"],
+        "semicolon": false,
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "never",
+                "singleline": "never"
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "ter-arrow-parens": [true, "as-needed"],
+        "import-name": false,
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "max-line-length": [
+            true,
+            {
+             "limit": 120,
+             "ignore-pattern": "^import |^export {(.*?)}"
+            }
+        ],
+        "no-else-after-return": [true, "allow-else-if"],
+        "whitespace": [true, "check-branch", "check-operator", "check-typecast", "check-preblock"],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            },
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }
+        ]
+    },
+    "rulesDirectory": []
+}

@@ -1,0 +1,60 @@
+{
+  "name": "automated-leave-app",
+  "scripts": {
+    "start": "./bin/webpack --watch --colors --progress",
+    "build": "ruby ./bin/webpack --watch --colors --progress",
+    "lint": "tslint \"./app/**/*.ts?(x)\" --fix",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "@types/jquery": "^3.3.2",
+    "@types/react": "^16.4.2",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-redux": "^6.0.2",
+    "@types/react-router-dom": "^4.2.7",
+    "@types/react-router-redux": "^5.0.14",
+    "@types/redux-actions": "^2.3.0",
+    "@types/redux-form": "^7.2.6",
+    "axios": "^0.18.0",
+    "axios-on-rails": "^0.0.1",
+    "babel-preset-react": "^6.24.1",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-devise": "^0.0.19",
+    "react-dom": "^16.4.1",
+    "react-modal": "^3.4.5",
+    "react-on-rails": "^11.0.7",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-simplert": "^0.0.2",
+    "react_ujs": "^2.4.4",
+    "reactjs-popup": "^1.1.1",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.4.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^7.4.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1",
+    "ts-loader": "3.5.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.10.0",
+    "webpack-dev-server": "2.11.2"
+  }
+}
